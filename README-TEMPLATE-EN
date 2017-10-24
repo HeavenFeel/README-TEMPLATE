@@ -1,0 +1,316 @@
+> **Table of contents**  
+>- Introduction
+>- Update Log
+>- Catalogue Structure
+>- Getting Started
+>   - Requirements
+>   - Versioning
+>   - Built With
+>   - Recommended modules
+>   - Configuration
+>   - Installation
+>- Running the tests
+>   - end to end tests
+>   - coding style tests
+>- Deployment
+>- Troubleshooting
+>- FAQ
+>- Maintainers/Authors
+>- License
+>- Acknowledgments
+
+
+
+#  Introduction 
+
+
+The introduction (required) shall consist of a brief paragraph or two that summarizes the purpose and function of this project.This introduction may be the same as the first paragraph on the project page.
+The introduction should include a link to the project page and issue queue.
+If the project is a sandbox, these links should go to the sandbox until promotion.```
+INTRODUCTION
+------------
+
+Project Title
+
+The Administration Menu module displays the entire administrative menu tree
+(and most local tasks) in a drop-down menu, providing administrators one- or
+two-click access to most pages.  Other modules may also add menu links to the
+menu using hook_admin_menu_output_alter().
+
+ * For a full description of the module, visit the project page:
+   https://xx.org/index.html
+
+ * To submit bug reports and feature suggestions, or to track changes:
+   https://drupal.org/project/issues/
+```
+
+
+
+## Update Log
+
+```
+### v1.0.0
+
+upgrade to https
+
+###  v0.1.0
+
+increase xx  demand
+```
+
+
+## Catalogue Structure
+
+List the general project Catalogue structure.
+
+
+
+
+## Getting Started
+
+### Requirements
+
+The requirements section (required) shall make it clear 
+whether this project requires anything outside of project-core to work (modules, libraries, etc). 
+List all requirements here, including those that follow indirectly from another module, etc. 
+The idea is to inform the users about what is required, so that everything they need can be procured 
+and included in advance of attempting to install the module. 
+If there are no requirements, write "No special requirements".
+
+```
+REQUIREMENTS
+------------
+
+This module requires the following modules:
+
+ * Views (https://xx.com/project/views)
+ * Panels (https://xx.com/project/panels)
+```
+
+### Versioning
+
+```
+VERSIONING
+-----------
+
+We use Git for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags/).
+```
+
+### Built With
+
+```
+BUILT WITH
+-----------
+
+- [Spring MVC](https://projects.spring.io/spring-framework/) - The web framework used
+- [Maven](https://maven.apache.org/) - Dependency Management
+- [Vue.js](https://vuejs.org/v2/guide//) - a progressive framework for building user interfaces. 
+```
+
+
+### Recommended modules
+
+This optional section lists modules that are not required, 
+but that may enhance the usefulness or user experience of your project. 
+Make sure to describe the benefits of enabling these modules.
+
+```
+RECOMMENDED MODULES
+-------------------
+
+ * Markdown filter (https://www.drupal.org/project/markdown):
+   When enabled, display of the project's README.md help will be rendered
+   with markdown.
+```
+
+
+### Configuration
+
+The configuration section (required) is necessary even when little configuration is required. Use this section to list special notes about the configuration of this module – including but not limited to permissions. This section is particularly important if the module requires additional configuration outside of the Drupal UI.
+
+If the module has little or no configuration, you should use this space to explain how enabling/disabling the module will affect the site.
+
+```
+CONFIGURATION
+-------------
+ 
+ * Configure user permissions in Administration » People » Permissions:
+
+   - Use the administration pages and help (System module)
+
+     The top-level administration categories require this permission to be
+     accessible. The administration menu will be empty unless this permission
+     is granted.
+
+   - Access administration menu
+
+     Users in roles with the "Access administration menu" permission will see
+     the administration menu at the top of each page.
+
+   - Display Drupal links
+
+     Users in roles with the "Display drupal links" permission will receive
+     links to drupal.org issue queues for all enabled contributed modules. The
+     issue queue links appear under the administration menu icon.
+
+ * Customize the menu settings in Administration » Configuration and modules »
+   Administration » Administration menu.
+
+ * To prevent administrative menu items from appearing twice, you may hide the
+   "Management" menu block.
+```
+or
+```
+CONFIGURATION
+-------------
+
+The module has no menu or modifiable settings. There is no configuration. When
+enabled, the module will prevent the links from appearing. To get the links
+back, disable the module and clear caches.
+```
+
+
+### Installation
+
+The installation section (required*) shall make it clear how to install the module. 
+However, if the steps to install the module follow the standard instructions for `install guide` or a theme, don't reinvent the wheel — simply provide a link and explain in detail any steps that may diverge from these steps. 
+
+Consider replacing this section with a standalone INSTALL.md file if your installation instructions are especially complex.
+
+* - required unless a separate INSTALL.md is provided.
+
+```
+INSTALLATION
+------------
+ 
+ * Install as you would normally install a contributed Drupal module. Visit:
+   https://xx.com/documentation/install/modules-themes
+   for further information.
+
+ * You may want to disable Toolbar module, since its output clashes with
+   Administration Menu.
+```
+End with an example of getting some data out of the system or using it for a little demo.
+
+
+## Running the tests
+
+Explain how to run the automated tests for this system
+
+
+### Break down into end to end tests
+
+Explain what these tests test and why
+
+```
+Give an example
+```
+
+### Coding style tests
+
+Explain what these tests test and why
+
+```
+Give an example
+```
+
+## Deployment
+
+Add additional notes about how to deploy this on a live system
+
+
+
+## Troubleshooting & FAQ
+
+These sections are optional. If present, they should address questions that are asked frequently in the issue queue (this will save you time in the future). Outline common problems that people encounter along with solutions (links are okay if the steps are long, but it is often helpful to provide a summary since links sometimes go stale).
+
+```
+TROUBLESHOOTING
+---------------
+
+ * If the menu does not display, check the following:
+
+   - Are the "Access administration menu" and "Use the administration pages
+     and help" permissions enabled for the appropriate roles?
+
+   - Does html.tpl.php of your theme output the $page_bottom variable?
+
+FAQ
+---
+
+Q: I enabled "Aggregate and compress CSS files", but admin_menu.css is still
+   there. Is this normal?
+
+A: Yes, this is the intended behavior. the administration menu module only loads
+   its stylesheet as needed (i.e., on page requests by logged-on, administrative
+   users).
+```
+
+
+
+## Maintainers/Authors
+
+This section is optional and should replace any pre-existing standalone MAINTAINERS.md file.
+
+```
+MAINTAINERS
+-----------
+
+Current maintainers:
+ * [Daniel F. Kudwien](https://drupal.org/user/54136/)  -  sun
+ * [Peter Wolanin](https://drupal.org/user/49851/) - pwolanin
+ * [Stefan M. Kudwien](https://drupal.org/user/48898/)  - smk-ka
+ * [Dave Reid](https://drupal.org/user/53892/) - Dave Reid
+
+This project has been sponsored by:
+ * UNLEASHED MIND
+   Specialized in consulting and planning of Drupal powered sites, UNLEASHED
+   MIND offers installation, development, theming, customization, and hosting
+   to get you started. Visit https://www.unleashedmind.com for more information.
+```
+```
+AUTHORS
+-----------
+* Billie Thompson - Initial work - [PurpleBooth](https://github.com/PurpleBooth/)
+* Drupal Documentation - edit document - [README Template](https://www.drupal.org/)
+
+See also the list of [contributors](https://github.com/your/project/contributors/) who participated in this project.
+```
+
+
+
+## License
+
+```
+LICENSE
+-----------
+
+This project is licensed under the MIT License - see the [LICENSE.md](https://github.com/your/project/LICENSE.md/) file for details
+```
+
+
+
+## Acknowledgments
+
+```
+ACKNOWLEDGMENTS
+-----------
+* Hat tip to anyone who's code was used
+* Inspiration
+* etc
+```
+
+
+
+## preferred format 
+
+Here is a summary of the preferred format for README.md:
+
+>- Headings in all caps.
+>- Headings underlined with ===/--- to the length of the heading, followed by a newline.
+>- Two lines prior to headings (except the first one).
+>- Bullets denoted by asterisks (*) with hanging indents.
+>- Numbered lists indented 4 spaces.
+>- Bulleted lists indented 1 space.
+>- Text manually word-wrapped within around 80 cols.
+
